@@ -40,15 +40,14 @@ healthcare_project/
 ### Installation
 
 # 1. Clone the repository
-git clone <your-repo-url>
+git clone <your-repo-url>  
 cd healthcare_project
 
 # 2. Create and activate a virtual environment
 python -m venv venv
-# Linux/macOS
-source venv/bin/activate
-# Windows
-venv\Scripts\activate
+
+**Linux/macOS**: source venv/bin/activate  
+**Windows**: venv\Scripts\activate
 
 # 3. Install dependencies
 pip install -r requirements.txt
@@ -60,10 +59,10 @@ python manage.py migrate
 python manage.py runserver
 
 # 6. Open your browser at:
-http://127.0.0.1:8000/
+http://127.0.0.1:8000/  
 http://127.0.0.1:8000/admin - Admin Page
 
-
+---
 **Configuration**
 
 **Database**: The project uses SQLite by default (db.sqlite3), which is ignored by Git.
@@ -92,12 +91,3 @@ staticfiles/
 Thumbs.db
 
 ```
-
----
-
-**Contributing**
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/my-feature`)
-3. Commit your changes (`git commit -m 'Add feature'`)
-4. Push to the branch (`git push origin feature/my-feature`)
-5. Create a Pull Request
