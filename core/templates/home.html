@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="jumbotron p-5 card-ghost">
+    <h1 class="display-5">Your Health, Our Priority</h1>
+    <p class="lead">Manage your health records, book appointments, and connect with doctors online.</p>
+    <p>
+        <a class="btn btn-success" href="{% url 'register' %}">Get Started</a>
+        <a class="btn btn-outline-primary" href="{% url 'login' %}">Login</a>
+    </p>
+</div>
+
+<div class="row mt-4">
+    <div class="col-md-4">
+        <div class="card p-3">
+            <h5>Patient Information</h5>
+            <p>Securely manage your medical records and personal health information in one place.</p>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card p-3">
+            <h5>Doctor Consultation</h5>
+            <p>Connect with qualified doctors for online consultations and medical advice.</p>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card p-3">
+            <h5>Health Checkups</h5>
+            <p>Track monthly health checkups and maintain a comprehensive health history.</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

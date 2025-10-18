@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="card p-4">
+    <h3>Create an account</h3>
+    <form method="post">{% csrf_token %}
+        {{ form.as_p }}
+        <div class="mb-3">
+            <label for="id_role">Role</label>
+            <select name="role" id="id_role" class="form-select">
+                <option value="patient">Patient</option>
+                <option value="doctor">Doctor</option>
+            </select>
+        </div>
+        <button class="btn btn-primary" type="submit">Register</button>
+    </form>
+</div>
+{% endblock %}

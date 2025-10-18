@@ -1,0 +1,31 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment (if inside project)
+venv/
+env/
+
+# Django stuff
+*.sqlite3        # your database file
+db.sqlite3        # SQLite default DB
+media/            # uploaded files
+staticfiles/      # collected static files
+
+# Django migrations (optional, you can keep them if you want)
+# core/migrations/*.py
+# !core/migrations/__init__.py
+
+# Environment variables
+.env
+
+# IDE/editor configs
+.vscode/
+.idea/
+*.iml
+
+# OS files
+.DS_Store
+Thumbs.db
+
