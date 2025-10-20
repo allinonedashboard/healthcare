@@ -47,7 +47,7 @@ cd healthcare_project
 python -m venv venv
 
 **Linux/macOS**: source venv/bin/activate  
-**Windows**: venv\Scripts\activate
+**Windows**: source venv\Scripts\activate
 
 # 3. Install dependencies
 pip install -r requirements.txt
